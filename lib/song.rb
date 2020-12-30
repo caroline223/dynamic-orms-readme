@@ -21,7 +21,7 @@ class Song
     column_names.compact
   end
 
-  self.column_names.each do |col_name|
+  self.column_names.each do |col_name| #This does not need to be defined??
     attr_accessor col_name.to_sym
   end
 
